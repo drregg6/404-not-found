@@ -91,30 +91,52 @@ p {
 }
 
 
+body {
+  padding: 0 7.5rem;
+}
+
 header h1 {
   font-size: 3rem;
-  padding: 5rem 10rem;
+  padding: 5rem 0;
 }
 
 .container {
-  margin: 5rem 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .image {
   height: 500px;
-  margin-right: 5rem;
 }
 .image img {
   height: 100%;
   width: auto;
 }
+
 .information {
-  margin-left: 5rem;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.information h2 {
+  font-size: 7rem;
+}
+.information p {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}
+.information a {
+  font-size: 1.6rem;
+  padding: 1.5rem 3rem;
+  background: black;
+  color: white;
+  text-decoration: none;
+  width: 44%;
 }
 
 footer {
+  padding: 5rem 0;
   text-align: center;
   font-size: 1.4rem;
 }
