@@ -3,7 +3,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  border: 1px dotted red;
 }
 
 /* Remove default padding */
@@ -20,7 +19,7 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 2;
 
   font-weight: normal;
   margin: 0;
@@ -97,10 +96,11 @@ body {
 
 header h1 {
   font-size: 3rem;
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 .container {
+  margin: 20rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -115,24 +115,27 @@ header h1 {
 
 .information {
   height: 500px;
+  width: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .information h2 {
-  font-size: 7rem;
+  line-height: 1.5;
+  font-size: 6rem;
 }
 .information p {
-  font-size: 1.6rem;
-  margin: 2rem 0;
+  width: 300px;
+  font-size: 2rem;
+  margin: 3rem 0;
 }
 .information a {
   font-size: 1.6rem;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 2rem;
   background: black;
   color: white;
   text-decoration: none;
-  width: 44%;
+  width: 200px;
 }
 
 footer {
@@ -152,5 +155,42 @@ footer {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body {
+    padding: 1rem;
+    line-height: 1.5;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .information {
+    margin-top: 3rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .information h2,
+  .information p,
+  .information a {
+    font-size: 1.6rem;
+  }
+
+  .information h2 {
+    font-size: 4rem;
+  }
+
+  .information p {
+    width: 90%;
   }
 }
